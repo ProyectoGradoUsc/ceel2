@@ -23,6 +23,7 @@
    <!--  <link href="{{ asset('css/app.css') }}" rel="stylesheet">-->
     <link href="{{ asset('css/bootstrap/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/css/all.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/fullcalendar-3.10.0/fullcalendar.min.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -82,5 +83,8 @@
         </main>
     </div>
         <script src="{{ asset('js/bootstrap/bootstrap.js') }}" defer></script>
+        <script src="{{ asset('plugins/fullcalendar-3.10.0/fullcalendar.min.js') }}" defer></script>
+        <script src="{{ asset('plugins/fullcalendar-3.10.0/locale/es.js') }}" defer></script>
+        <script src="{{ asset('js/jquery-3.3.1.min.js') }}" defer></script>
     </body>
 </html>

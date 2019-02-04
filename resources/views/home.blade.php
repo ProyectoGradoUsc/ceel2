@@ -3,9 +3,7 @@
 @section('content')
 <br><br><br><br>
 <div class="container">
-
         <div class="row">   
-            
                 <div class="col-md-4 center-icon">
                     <a href="{{ route('servicios') }}">
                         <i class="fa fa-handshake fa-5x" ></i>
@@ -30,8 +28,9 @@
                         </div>
                     </a>
                 </div>
-    
         </div>
-
+        <div class="row">
+            
+        </div>
 </div>
 @endsection

@@ -34,13 +34,13 @@
                 {!! $errors->first('codigo', '<span class=error>:message</span>') !!}
               </div>
             </div>
-            <div class="col-md-3 ">
+            <!--<div class="col-md-3 ">
               <div class="form-group" style="width: 270px">
                 <label for="nombreServicio">Nombre del servicio:</label>
                 <input type="text" class="form-control" name="nombreServicio" value="{{old('nombreServicio')}}">
                 {!! $errors->first('nombreServicio', '<span class=error>:message</span>') !!}
               </div>
-            </div>
+            </div>-->
             <div class="col-md-3 ">
               <div>
                 <label for="servicio">Servicio:</label>
@@ -65,7 +65,7 @@
                 {!! $errors->first('tema', '<span class=error>:message</span>') !!}
               </div>
             </div>
-          </div>
+        </div>
 
           <div class="row">
             <div class="col-md-3 ">

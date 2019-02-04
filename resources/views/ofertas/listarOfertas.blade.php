@@ -28,7 +28,7 @@
       <thead>
         <tr>
           <th style="text-align: center">Codigo</th>
-          <th style="text-align: center">Descripcion</th>
+          <th style="text-align: center">Servicio</th>
           <th style="text-align: center">Tema</th>
           <th style="text-align: center; width: 10%">Ponencia</th>
           <th style="text-align: center; width: 7%">Acciones</th>
@@ -38,8 +38,8 @@
         @foreach ($allOfertas as $curso)     
         <tr>
           <td style="text-align: center">{{ $curso->codigo }}</td>
-          <td style="text-align: center">{{ $curso->descripcion }}</td>
-          <td style="text-align: center">{{ $curso->IdTema }}</td>
+          <td style="text-align: center">{{ $curso->nomServicios }}</td>
+          <td style="text-align: center">{{ $curso->nomTemas }}</td>
           <td style="text-align: center">@if ($curso->ponencia == 0) No @else Si @endif</td>
           <th style="text-align: center">
             <label>

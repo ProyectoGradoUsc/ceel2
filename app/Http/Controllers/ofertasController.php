@@ -19,10 +19,17 @@ class ofertasController extends Controller
 
     public function showOfertas(){
 
-    	$allOfertas = DB::table('cursos')->get();
+        //$allOfertas = DB::table('cursos')->get();
+        $allOfertas = DB::table('cursos')
+            ->join('servicios', 'cursos.IdServicio', '=', 'servicios.id')
+            ->join('temas', 'cursos.IdTema', '=', 'temas.id')
+            ->select('cursos.*','servicios.nombre as nomServicios','temas.nombre as nomTemas')
+            ->get();     
+
+ 
     	return view ('ofertas/listarOfertas', compact('allOfertas'));
     }
-
+    
     public function showCreateOfertas(){
 /*
         $curso = "";
@@ -41,7 +48,6 @@ class ofertasController extends Controller
 
         $this->validate($this->request,[
             'codigo' => 'required',
-            'nombreServicio' => 'required',
             'servicio' => 'required',
             'tema' => 'required',
             'responsable' => 'required',
@@ -63,7 +69,6 @@ class ofertasController extends Controller
 
         DB::table('cursos')->insert([
             "codigo" => $this->request->input('codigo'),
-            "nomServicio" => $this->request->input('nombreServicio'),
             "idServicio" => $this->request->input('servicio'),
             "idTema" => $this->request->input('tema'),
             "idResponsable" => $this->request->input('responsable'),
