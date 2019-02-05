@@ -41,3 +41,7 @@ Route::get('showCreateOfertas', ['as' => 'showCreateOfertas', 'uses' => 'ofertas
 Route::post('crearOferta', 'ofertasController@createOferta');
 
 Route::get('deleteOferta/{id}', ['as' => 'deleteOferta', 'uses' => 'ofertasController@deleteOferta' ]);
+
+
+
+Route::get('calendario', ['as' => 'calendario', 'uses' => 'Calendario\CalendarioController@showCalendario' ]);

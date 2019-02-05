@@ -29,8 +29,16 @@
                     </a>
                 </div>
         </div>
+        </br></br></br>
         <div class="row">
-            
+        <div class="col-md-4 center-icon">
+                    <a href="{{ route('calendario') }}">
+                        <i class="fa fa-calendar fa-5x" ></i>
+                        <div>
+                           <label>Calendario</label>
+                        </div>
+                    </a>
+                </div>
         </div>
 </div>
 @endsection

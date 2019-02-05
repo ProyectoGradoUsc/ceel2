@@ -24,6 +24,8 @@
     <link href="{{ asset('css/bootstrap/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/css/all.css') }}" rel="stylesheet">
     <link href="{{ asset('plugins/fullcalendar-3.10.0/fullcalendar.min.css') }}" rel="stylesheet">
+
+
 </head>
 <body>
     <div id="app">
@@ -82,9 +84,12 @@
             @yield('content')
         </main>
     </div>
+    <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/jquery-3.3.1.min.js') }}" defer></script>
         <script src="{{ asset('js/bootstrap/bootstrap.js') }}" defer></script>
+        <script src="{{ asset('plugins/fullcalendar-3.10.0/lib/moment.min.js')}}"></script>
         <script src="{{ asset('plugins/fullcalendar-3.10.0/fullcalendar.min.js') }}" defer></script>
         <script src="{{ asset('plugins/fullcalendar-3.10.0/locale/es.js') }}" defer></script>
-        <script src="{{ asset('js/jquery-3.3.1.min.js') }}" defer></script>
+        @yield('script')  
     </body>
 </html>
